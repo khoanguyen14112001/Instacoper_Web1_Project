@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="assets/css/product-detail.css">
+    <link rel="stylesheet" href="assets/css/radio.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="shortcut icon" type="image" href="assets/img/logo2.png">
+
+    <link rel="stylesheet" href="assets/css/styleP.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+    $(function(){
+    $("header").load("header.html"); 
+    $("footer").load("footer.html"); 
+    });
+    </script> 
+
+<header>
+</header>
+<body>
+    <div class="wrapper">
+        <div class="top-content">
+            <ul class="breadcrumb">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li>Bán chạy nhất</li>
+            </ul>           
+        </div>
+
+        <div class="left-content">
+            <div class="left-content-img">
+                <img id="mainImage" src="assets/img/shoes/1.png">
+            </div>
+
+            <div class="left-content-slider">
+                <div class="left-content-slider-content">
+                    <div class="arrow-left-background">
+                    </div>
+
+                    <img class="arrow-left" id="slideLeft" src="assets/img/left_arrow.svg">
+
+                    <div class="arrow-right-background">
+                    </div>
+
+                    <img class="arrow-right" id="slideRight" src="assets/img/right_arrow.svg">
+
+
+                    <div class="left-content-slider-more-img" id="slider">
+                        <div class="item">
+                            <img class="thumb" src="assets/img/detail_img_shoes/1.png">
+                        </div>
+
+                        <div class="item">
+                            <img class="thumb" src="assets/img/detail_img_shoes/2.png">
+                        </div>
+
+                        <div class="item">
+                            <img class="thumb" src="assets/img/detail_img_shoes/3.png">
+                        </div>
+
+                        <div class="item">
+                            <img class="thumb" src="assets/img/detail_img_shoes/4.png">
+                        </div>
+
+                        <div class="item">
+                            <img class="thumb" src="assets/img/detail_img_shoes/5.png">
+                        </div>
+
+                        <div class="item">
+                            <img class="thumb" src="assets/img/detail_img_shoes/6.png">
+                        </div>
+                        <div class="item">
+                            <img class="thumb" src="assets/img/detail_img_shoes/3.png">
+                        </div>
+
+                        <div class="item">
+                            <img class="thumb" src="assets/img/detail_img_shoes/2.png">
+                        </div>
+
+                    </div>
+                    
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right-content">
+            <div class="right-content-pa">
+                <div class="name">
+                    <p1  id="productName">Nike Air Force 1 Low Triple White</p1>
+                </div>
+                <div class="gender-price">
+                    <p2 id="productGender">Giày nam</p2>
+                    <br/>
+                    <p3 id="productPrice">2.649.000đ</p3>
+                </div>
+                <div class="masanpham-thuonghieu">
+                    <p5>Mã sản phẩm: </p5>
+                    <p4>DD8959-100</p4>
+                    <br/>
+                    <p5>Thương hiệu: </p5>
+                    <p4>Nike</p4>
+                </div>
+
+                <div class="size">
+                    <p6>Chọn size giày:</p6>
+                    <div class ="content-size-detail"> 
+                        <input type="radio" class="chk-size" name="rad" id="s35">
+                        <label for = "s35">35</label>
+
+                        <input type="radio" class="chk-size" name="rad" id="s35.5">
+                        <label for = "s35.5">35.5</label>
+
+                        <input type="radio" class="chk-size" name="rad" id="s36">
+                        <label for = "s36">36</label>
+
+                        <input type="radio" class="chk-size" name="rad" id="s37">
+                        <label for = "s37">37</label>
+
+                        <input type="radio" class="chk-size" name="rad" id="s38.5">
+                        <label for = "s38.5">38.5</label>
+                    
+                    </div>
+                    <div class ="content-size-detail">
+                        <input type="radio" class="chk-size" name="rad" id="s39">
+                        <label for = "s39">39</label>
+
+                        <input type="radio" class="chk-size" name="rad" id="s40">
+                        <label for = "s40">40</label>
+
+                        <input type="radio" class="chk-size" name="rad" id="s42.5">
+                        <label for = "s42.5">42.5</label>
+
+                        <input type="radio" class="chk-size" name="rad" id="s43">
+                        <label for = "s43">43</label>
+
+                        <input type="radio" class="chk-size" name="rad" id="s45">
+                        <label for = "s45">45</label>
+                    </div>
+                </div>
+
+                <div class="add-to-cart" id="btnAddToCart">
+                    <div class="button-add-to-cart">
+                        <img src="assets/img/ic_cart.svg">
+                        <div>Thêm vào giỏ hàng</div>
+                    </div>
+                </div>
+
+                <div class="mota-sanpham">
+                    <p6>Mô tả sản phẩm:</p6>
+                    <p id="productDes">
+                        Ra mắt vào năm 1982, AF-1 là đôi giày bóng rổ đầu tiên của Nike Air, đã cách mạng hóa trò chơi trong khi nhanh chóng thu hút được sức hút trên khắp thế giới. Ngày nay, Air Force 1 vẫn đúng với nguồn gốc của nó với cùng một lớp đệm mềm mại và có độ đàn hồi đã thay đổi lịch sử giày thể thao.
+                    </p>
+                </div>
+
+                <div class="chinhsach">
+                    <div class="bottom-left"></div>
+
+                    <div class="head-left">
+                        <p6>Chính sách</p6>
+                        <img class="img-title" src="assets/img/down_arrow.svg">
+                    </div>
+                    <div>
+                        <ul>
+                            <li><p>Cam kết chính hãng 100%: Giày nhập từ thị trường US, UK, JP</p></li>
+                            <li><p>Miễn phí vận chuyển cho đơn hàng trên 5.000.000đ</p></li>
+                            <li><p>Đổi trả nhanh chóng: hỗ trợ đổi hàng miễn phí trong vòng 7 ngày</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="danhgia">
+                    <div class="bottom-left"></div>
+
+                    <div class="head-left">
+                        <p6>Đánh giá</p6>
+                        <img class="img-title" src="assets/img/down_arrow.svg">
+                        <img class="img-title2" src="assets/img/ic_5_stars.svg">
+                    </div>
+                    <div class="danhgia-chu">
+                        <div class="danhgia-vote">
+                            <img src="assets/img/ic_5_stars.svg">
+                            <p>5/5 Sao</p>
+                        </div>
+
+                        <div class="viet-danhgia">
+                            <p6>Viết đánh giá</p6>
+                            <p>Sản phẩm hiện tại chưa có đánh giá, hãy là người đầu tiên đánh giá...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-content">
+            <div class="bottom-left"></div>
+            <div class="top">
+                <p6 class="may-love">
+                    CÓ THỂ BẠN SẼ THÍCH
+                </p6>
+            </div>
+
+            <div class="offer" id="offerProduct">
+
+                
+                
+            </div>
+
+
+        </div>
+        
+    </div>
+    <script>
+        let btnAdd = document.getElementById('btnAddToCart');
+        btnAdd.addEventListener('click',()=>{
+            cartStore();
+            totalCost();
+        })
+        function cartStore(){
+            let productNumber = localStorage.getItem("cartNumbers");
+                        
+            productNumber = parseInt(productNumber);
+
+            if(productNumber){
+                localStorage.setItem('cartNumbers',productNumber + 1);
+            }
+            else{
+                localStorage.setItem('cartNumbers',1);
+            }
+            location.reload();
+            alert("Thêm vào giỏ hàng thành công");
+            setItem();
+        }
+        function setItem(){
+            let product = JSON.parse(localStorage.getItem("data"));
+
+            let cartItem = JSON.parse(localStorage.getItem("productInCart"));
+            if(cartItem!=null){
+                if(cartItem[product.name] == undefined){
+                    cartItem = {
+                        ...cartItem,
+                        [product.name]: product
+                    }
+                }
+                cartItem[product.name].incart +=1;
+            }
+            else{
+                product.incart = 1;
+                cartItem = {
+                    [product.name]:product
+                }
+            }
+         
+            localStorage.setItem('productInCart',JSON.stringify(cartItem));
+        }
+        function totalCost(){
+            let product = JSON.parse(localStorage.getItem("data"));
+
+            let cartCost = localStorage.getItem('totalCost');
+           
+
+            if(cartCost != null){
+                cartCost = parseInt(cartCost);
+                localStorage.setItem('totalCost', cartCost + product.aft_price);
+            }else{
+                localStorage.setItem('totalCost',product.aft_price);
+
+            }
+        }
+    </script>
+    
+    <script>
+      
+        var x = JSON.parse(localStorage.getItem("data"));
+
+        x.aft_price = x.aft_price.toLocaleString('it-IT', {style : 'currency', currency : 'VND'});
+        x.aft_price = x.aft_price.replace("VND", "₫");
+        x.aft_price = x.aft_price.replace(/\s+/g, '');
+
+        document.getElementById('productName').innerHTML = x.name;
+        document.getElementById('productPrice').innerHTML = x.aft_price;
+        document.getElementById('mainImage').src = x.thumb;
+        document.getElementById('productGender').innerHTML = x.gender;
+        document.getElementById('productDes').innerHTML = x.descript;
+
+    
+    </script>
+
+    <script>
+        var thumb = document.getElementsByClassName('thumb');
+        for(var i =0; i<thumb.length;i++){
+            thumb[i].addEventListener("click", function(){
+                // if(active.length>0){
+                //     active[0].classList.remove('active');
+                // }
+                document.getElementById("mainImage").src = this.src;
+            })
+
+        }
+
+        var slideLeft = document.getElementById("slideLeft");
+        var slideRight = document.getElementById("slideRight");
+
+        slideLeft.addEventListener("click", function(){
+            document.getElementById("slider").scrollLeft -= 105;
+        })
+
+        slideRight.addEventListener("click", function(){
+            document.getElementById("slider").scrollLeft += 105;
+        })
+
+
+
+    </script>
+
+<script>
+
+        
+    var xhttp = new XMLHttpRequest();
+    var html = "";
+    var i;
+    let myArr;
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+                myArr = JSON.parse(this.responseText);
+                myFunction(myArr);
+            }
+        };
+    xhttp.open("GET","assets/json/db_product.json", true);
+    xhttp.send();
+
+    function myFunction(arr) {
+        html = "<div class='offer' id='offerProduct'>";
+        for (i = 0; i <6; i++) {
+            var sp = arr.product[i];
+            sp.aft_price = sp.aft_price.toLocaleString('it-IT', {style : 'currency', currency : 'VND'});
+            sp.aft_price = sp.aft_price.replace("VND", "₫");
+            sp.aft_price = sp.aft_price.replace(/\s+/g, '');
+
+            html += "<div class='item'> <div class='img'> <img onclick = openDetail(" + i + ") src=" + sp.thumb +"> <div class='xemnhanh'></div> <div class='xemnhanh-content'>Xem nhanh</div> </div> <div class='text'> <div class='title'>"+sp.title+"</div> <div class='name'>" + sp.name+"</div> <div class='gender'>"+sp.gender+"</div> <div class='price'> <div class='aft-price'>"+sp.aft_price+"</div>   </div> </div> </div> "
+        }
+        html += " </div>";
+
+        document.getElementById("offerProduct").innerHTML = html;
+
+    }
+
+    function openDetail(i){
+        var sp = myArr.product[i];
+        localStorage.setItem("data",JSON.stringify(sp));
+        location.href = "detail-product.html";
+        console.log(i);
+    }
+
+
+
+   
+
+</script>
+    
+    
+</body>
+<footer>
+  
+</footer>
+</html>

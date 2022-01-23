@@ -1,0 +1,653 @@
+
+
+.wrapper{
+    width: 100%;
+    max-width: 1140px;
+    height: auto;
+    margin: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin-top: 150px;
+
+}
+
+
+body{
+    width: 100%;
+    float: left;
+}
+
+
+.top-content-left .outside{
+    width: 1140px;
+    height: auto;
+    margin: auto;
+}
+  
+.top-side{
+    width: 100%;
+    height: 60px;
+    float: left;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+div, input{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+.top-content-left{
+    width: 100%;
+    float: left;
+    line-height: 2;
+    overflow-x: hidden;
+    
+}
+
+
+
+
+.top-content-right{
+    float: left;
+    height: 35%;
+    width: 100%;
+    box-sizing: border-box;
+
+
+}
+
+#sort-by{
+    position: relative;
+}
+
+.top-content-right .sort-by-type{
+    display: none;
+    background-color: #FAFBFB;
+    position: absolute;
+    right: 0;
+    border: 1px solid #BCBCBC;
+    margin-top: 30px;
+    list-style-type: none;
+    padding: 7px;
+    z-index: 200;
+}
+
+
+.top-content-right> div>div{
+    width: fit-content;
+    float: right;
+    margin-left: 15px;
+
+  
+}
+
+
+.top-content-right img{
+    max-height: 12px;
+    float: right;
+    margin-left: 6px;
+    margin-top: 3px;
+}
+
+
+
+
+
+div, input{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.left-side{
+    width: 20%;
+    float: left;
+    height: auto;
+
+    
+}
+
+
+
+
+/* CSS cho chung cho 4 search fields */
+.head-left .title{
+    float: left;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.img-title{
+    float: right;
+    text-align: center;
+    top: 45%;
+    position: absolute;
+    right: 0%;
+
+}
+
+.head-left{
+    width: 95%;
+    float: left;
+    margin-bottom: 5px;
+    position: relative;
+
+}
+
+.bottom-left{
+    height: 0.75px;
+    width: 95%;
+    background-color: rgba(188, 188, 188, 1);
+    margin-top: 15px;
+    float: left;
+
+}
+
+
+/* CSS cho nhãn hiệu */
+.nhanhieu{
+    height: auto;
+    width: 100%;
+
+}
+
+.nhanhieu .head-left{
+    margin-bottom: 10px;
+
+}
+
+
+/* CSS cho khoảng giá */
+.khoanggia{
+    height: auto;
+    width: 100%;
+    
+}
+.rangslider-content{
+    height: initial;
+    width: 95%;
+    float: left;
+}
+.rangeslider-content2{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.rangeslider-price{
+    height: 3px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(188, 188, 188, 1);
+    position: relative;
+    margin-top: 10px;
+}
+
+
+.rangeslider-price .progress{
+    height: 3px;
+    border-radius: 5px;
+    background-color: black;
+    left: 0%;
+    right: 0%;
+    position: absolute;
+}
+
+
+.range-input{
+    position: relative;
+}
+.range-input input{
+    position: absolute;
+    top: -5px;
+    height: 5px;
+    width: 100%;
+    -webkit-appearance: none;
+    pointer-events: none;
+    background: none;
+}
+
+.range-input input::-webkit-slider-thumb{
+    height: 12px;
+    width: 12px;
+    pointer-events: auto;
+    border: none;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    background-color: black;
+}
+
+
+
+
+.rangeslider-inputnum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.output-num{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.output-num input{
+    width: 90px;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px 5px 0px 5px;
+
+}
+
+
+/* CSS cho size */
+.size{
+    height: auto;
+    width: 100%;
+}
+.content-size{
+    float: left;
+    line-height: 2.3;
+}
+
+
+
+#hiddenFilter, #sort{
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+
+#hiddenFilter:hover, #sort:hover{
+    color: #F54253;
+    transition: 0.4s;
+
+}
+
+
+/* CSS cho giới tính */
+.gioitinh{
+    height: auto;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.content-gender{
+    width: 95%;
+    height: inherit;
+    float: left;
+}
+
+/* CSS cho product side */
+
+.main-side{
+    width: 80%;
+    height: auto;
+    float: left;
+    border-left: 1px solid rgba(188, 188, 188, 1);
+    box-sizing: border-box;
+}
+
+.content-product{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding-left: 20px;
+
+}
+
+.item{
+    width: 19%;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+
+
+
+.content-product .item .img{
+    width: 100%;
+    padding-top: 100%; 
+    position: relative;
+    cursor: pointer;
+
+}
+
+.content-product .item .img >img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+}
+
+
+
+.content-product .item .text{
+    margin-top: 8px;
+}
+
+
+.content-product .item .img:hover .xemnhanh{
+    height: 20%;
+}
+
+.content-product .item .img:hover .xemnhanh-content{
+    font-size: 15px;
+    display: block;
+}
+
+.content-product .img .xemnhanh{
+    width: 100%;
+    height: 0%;
+    background-color: #F54253;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 0;
+    transition: .3s ease;
+}
+
+.content-product .img .xemnhanh-content{
+    width: 100%;
+    text-align: center;
+    font-size: 0px;
+    opacity: 1;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    color: white;
+}
+
+
+
+
+.content-product .item .text .title{
+    font-size: 10px;
+    color: #F54253;
+    font-weight: bold;
+}
+.content-product .item .text .name{
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    transition: 0.4s;
+
+}
+.content-product .item .text .name:hover{
+    color: #F54253;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
+
+.content-product .item .text .gender{
+    font-size: 14px;
+    color: black;
+}
+
+.content-product .item .text .price{
+    font-size: 12px;
+    color: black;
+    margin-top: 3px;
+    font-weight: bold;
+    width: 100%;
+   
+}
+
+
+
+
+
+
+.content-product .item .text .price .pre-price{
+    font-size: 12px;
+    color: #8D8D8D;
+    margin-top: 3px;
+    text-decoration: underline;
+    font-weight: bold;
+    width: 50%;
+    margin-left: 5px;
+    display: inline;
+
+}
+
+
+.content-product .item .text  .price .aft-price{
+    font-size: 12px;
+    color: black;
+    margin-top: 3px;
+    font-weight: bold;
+    display: inline;
+
+}
+
+.content-product .item .text .sale{
+    color: #41A139;
+    font-weight: bold;
+    font-size: 12px;
+    width: 100%;
+
+}
+
+
+.content-product .item .img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+
+}
+
+.watchmore{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1023px){
+    .wrapper{
+        width: 100%;
+    }
+
+    .item{
+        width: 23.5%;
+        height: 280px;
+    }
+    .content-product .item .img:hover .xemnhanh{
+        display: none;
+    }
+    
+    .content-product .item .img:hover .xemnhanh-content{
+        display: none;
+
+    }
+}
+
+@media only screen  and (min-width: 594px) and (max-width: 949px){
+    .wrapper{
+        width: 100%;
+    }
+    .left-side{
+        display: none;
+    }
+
+    #filter{
+        display: none;
+    }
+
+
+
+
+    .main-side{
+        width: 100%;
+        border-left: none;
+    }
+
+    .content-product{
+        padding-left: 0;
+    }
+
+    .item{
+        width: 24%;
+      
+    }
+    .content-product .item .img:hover .xemnhanh{
+        display: none;
+    }
+    
+    .content-product .item .img:hover .xemnhanh-content{
+        display: none;
+
+    }
+}
+@media only screen  and (min-width: 460px) and (max-width: 593px){
+    .wrapper{
+        width: 100%;
+    }
+    .left-side{
+        display: none;
+    }
+
+    #filter{
+        display: none;
+    }
+
+
+    .content-product .item .img:hover .xemnhanh{
+        display: none;
+    }
+    
+    .content-product .item .img:hover .xemnhanh-content{
+        display: none;
+
+    }
+
+    .main-side{
+        width: 100%;
+        border-left: none;
+    }
+
+    .content-product{
+        padding-left: 0;
+    }
+
+    .item{
+        width: 48%;
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 460px){
+    .wrapper{
+        width: 100%;
+        min-width: 300px;
+
+    }
+    .left-side{
+        display: none;
+    }
+
+    #filter{
+        display: none;
+    }
+    .content-product .item .img:hover .xemnhanh{
+        display: none;
+    }
+    
+    .content-product .item .img:hover .xemnhanh-content{
+        display: none;
+
+    }
+
+
+
+    .main-side{
+        width: 100%;
+        border-left: none;
+    }
+
+    .content-product{
+        padding-left: 0;
+    }
+
+    .item{
+        width: 100%;
+    }
+
+    .item{
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 320px){
+    .wrapper{
+        width: 100%;
+        min-width: 300px;
+
+    }
+    .left-side{
+        display: none;
+    }
+
+    #filter{
+        display: none;
+    }
+    .content-product .item .img:hover .xemnhanh{
+        display: none;
+    }
+    
+    .content-product .item .img:hover .xemnhanh-content{
+        display: none;
+
+    }
+
+
+
+    .main-side{
+        width: 100%;
+        border-left: none;
+    }
+
+    .content-product{
+        padding-left: 0;
+    }
+
+    .item{
+        width: 100%;
+    }
+
+    .item{
+        text-align: center;
+    }
+}
+
+
+
+
+
+

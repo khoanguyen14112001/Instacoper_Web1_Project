@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styleP.css">
+    <link rel="shortcut icon" type="image" href="assets/img/logo2.png">
+
+    <link rel="stylesheet" href="assets/css/account/account.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400&display=swap" rel="stylesheet">
+
+
+    
+    <title>Document</title>
+</head>
+</head>
+
+<body>
+    
+    <div class="left-left">
+      
+        <ul class="breadcrumb">
+            <li><a href="#">Trang chủ</a></li>
+            <li>Thông tin tài khoản</li>
+        </ul>  
+        <div class="content-container">
+            <div id="btnCloseAccountNav">
+                <a></a>
+            </div>
+            <div class="account-of">
+                <div class="img">
+                    <img src="assets/img/account/suzy.jpg">
+                </div>
+                <div class="info">
+                    <p>Tài khoản của</p>
+                    <p class="ac-name">Tuyết Trinh</p>
+                </div>
+            </div>
+            <div class="nav-container">
+                <div class="item-nav">
+                    <div class="img">
+                        <img src="assets/img/iconKhoa/ic_account.svg">
+                    </div>
+                    <div class="nav">
+                        <a href="account_my_account.html" id="my_account">Tài khoản của tôi</a>
+                    </div>
+                </div>
+
+                <div class="item-nav">
+                    <div class="img">
+                        <img src="assets/img/iconKhoa/ic_order.svg">
+                    </div>
+                    <div class="nav">
+                        <a href="account_order_management.html" id="order_management">Quản lý đơn hàng</a>
+                    </div>
+                </div>
+
+                <div class="item-nav">
+                    <div class="img">
+                        <img src="assets/img/iconKhoa/ic_notification.svg">
+                    </div>
+                    <div class="nav">
+                        <a href="account_notification.html" id="notification">Thông báo của tôi</a>
+                    </div>
+                </div>
+
+                <div class="item-nav">
+                    <div class="img">
+                        <img src="assets/img/iconKhoa/ic_change_password.svg">
+                    </div>
+                    <div class="nav">
+                        <a href="account_my_address.html" id="my_address">Thiết lập địa chỉ</a>
+                    </div>
+                </div>
+
+                <div class="item-nav">
+                    <div class="img">
+                        <img src="assets/img/iconKhoa/ic_address.svg">
+                    </div>
+                    <div class="nav">
+                        <a href="account_change_password.html" id="change_password">Đổi mật khẩu</a>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>    
+    </div>
+    <script>
+        const btnCloseAccountNav = document.getElementById("btnCloseAccountNav");
+        const navAccount = document.getElementById("left_side");
+
+        if(btnCloseAccountNav){
+            btnCloseAccountNav.addEventListener('click', () =>{
+                navAccount.style.left = "-250px";
+            })
+        }
+
+    </script>  
+    <script>
+          var my_account = document.getElementById("my_account"); 
+          var order_management = document.getElementById("order_management");
+
+          var notification = document.getElementById("notification");
+          var address = document.getElementById("my_address");
+          var password = document.getElementById("change_password");
+
+          var URLfull = window.location.href;
+          var arr = URLfull.split("/");
+          var link = arr[arr.length-1];
+
+
+          var arrAddress = "account_my_address.html, account_my_address_choose.html";
+
+          if(link === 'account_my_account.html'){
+            my_account.className = "on-active";
+            console.log(link); 
+          }
+
+          if(link === 'account_order_management.html'){
+            order_management.className = "on-active";
+            console.log(link); 
+          }
+
+          if(link === 'account_notification.html'){
+            notification.className = "on-active";
+            console.log(link); 
+          }
+
+          
+          if(arrAddress.includes(link)){
+            address.className = "on-active";
+            console.log(link); 
+          }
+
+          if(link === 'account_change_password.html'){
+            password.className = "on-active";
+            console.log(link); 
+          }
+
+    </script> 
+    
+</body>
+
+</html>

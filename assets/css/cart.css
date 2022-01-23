@@ -1,0 +1,527 @@
+
+.wrapper{
+    max-width: 1140px;
+    width: 100%;
+    height: auto;
+    margin:auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin-top: 150px;
+    min-width: 300px;
+
+}
+
+.money > .content >p4{
+    font-size: 16px;
+}
+
+
+.money > .price >p4{
+    font-size: 16px;
+}
+
+.money-total > .price >p4, 
+.money-total > .content > p4{
+    font-size: 16px;
+}
+
+
+div{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.cart-top-content{
+    display: block ;
+}
+
+p{
+    margin: 0;
+}
+
+/* CSS cho left content */
+
+.left-content{
+    width: 60%;
+    height: 950px;
+    float: left;
+}
+
+.cart-top-content >div{
+    width: 100%;
+}
+
+
+.cart-top-content >div:last-child{
+    margin-top: 15px;
+}
+
+
+.cart-item{
+    width: 100%;
+    height: 80%;
+    margin-top: 20px;
+    
+}
+
+.cart-item .item{
+    width: 100%;
+    height: 25%;
+    margin-top: 30px;
+}
+
+.item .img {
+    width: 23%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.item .img .container{
+    width: 100%;
+   
+}
+
+.item .img .container>img{
+    width: 100%;
+   
+}
+
+
+.item .item-content {
+    width: 77%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.item .item-content >div:first-child {
+    padding-left: 12px;
+
+    height: 80%;
+    width: 80%;
+    float: left;
+
+
+}
+.item .item-content >div:last-child {
+    height: 80%;
+    width: 20%;
+    float: left;
+}
+
+.item .item-content >div:last-child >div{
+    float: right;
+    height: 100%;
+    margin-top: 5px;
+
+}
+
+
+
+.item .item-content >div:last-child >div >div {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.item .item-content >div:last-child > div >div:last-child{
+    margin-top:50%;
+}
+
+.item .item-content >div:last-child >div:last-child >div img  {
+    width: 40%;
+}
+
+
+
+
+
+
+.item-content p4{
+    font-size: 18px;
+}
+
+.name{
+    margin-top: 10px;
+}
+
+.gender{
+    margin-top: 10px;
+}
+
+.size{
+    margin-top: 10px;
+}
+
+.quantity{
+    margin-top: 10px;
+
+}
+
+.item-content .size select{
+    display: inline-block;
+    border: none;
+    font-weight: 700;
+
+}
+
+
+
+.item-content .size p , .item-content .quantity p{
+    width: 30%;
+
+}
+
+.item-content .size select{
+    display: inline-block;
+    border: none;
+    font-weight: 700;
+
+}
+
+.item-content .size select option{
+    font-weight: 600;
+    margin: 10px;
+
+}
+
+
+
+
+.item-content .size p{
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.item-content .quantity p{
+    display: inline-block;
+    text-decoration: underline;
+
+}
+
+.item-content .quantity input{
+    display: inline-block;
+    width: 10%;
+    font-weight: 700;
+    border: none;
+
+    
+}
+
+
+
+/* CSS cho right content */
+
+.right-content{
+    width: 40%;
+    float: left;
+
+}
+
+.right-content-wrapper{
+    float: right;
+    width: 75%;
+    height: 30%;
+    background-color: #FAFAFA;
+    padding: 20px 20px 100px 20px;
+}
+
+.right-content-wrapper p4{
+    font-size: 18px;
+}
+
+.right-content-wrapper .title{
+    margin-bottom: 15px;
+}
+
+.right-content-wrapper .money{
+    height: inherit;
+    width: 100%;
+    margin-top: 8px;
+    line-height: 1.5;
+   
+}
+
+.right-content-wrapper .money-total{
+    width: 100%;
+    margin-top: 8px;
+    line-height: 1.5;
+
+}
+
+.right-content-wrapper .content{
+    width: 50%;
+    float: left;
+}
+
+.right-content-wrapper .content >p4{
+    width: 100%;
+    float: left;
+}
+
+
+.right-content-wrapper .price{
+    width: 50%;
+    float: left;
+
+}
+
+.right-content-wrapper .price > p4{
+    width: 100%;
+    text-align: right;
+    display: block;
+}
+
+.bottom-left{
+    float: left;
+    margin-top: 10px;
+}
+
+
+.order{
+    height: 40px;
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button-order{
+    width: 85%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: black;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.button-order> a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.button-order:hover{
+    background-color: #F54253;
+    transition: .4s;
+
+}
+
+
+
+
+
+
+.bottom-content{
+    float: left;
+    height: 300px;
+    width: 100%;
+}
+
+
+
+
+
+@media only screen and (max-width: 1023px){
+
+    p{
+        font-size: 14px;
+    }
+    
+    /* -- Tên giày */
+    p1{
+        font-size: 32px;
+    }
+    /* -- Giới tính */
+    p2{
+        font-size: 22px;
+    }
+    
+    /* -- Price */
+    p3{
+        font-size: 25px;
+    }
+    
+    p4{
+        font-size: 15px;
+    }
+    
+    /* normal text */
+    p5{
+        font-size: 15px;
+    }
+    
+    p6{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+
+  
+    .right-content-wrapper p4{
+        font-size: 18px;
+    }
+
+    .item-content p4{
+        font-size: 20px;
+    }
+
+    .item-content .name{
+        margin-top: 0;
+    }
+
+    .item .item-content >div:last-child >div >div {
+        width: 100%;
+        text-align: center;
+        margin-top: -5px;
+    }
+
+    .item .item-content >div:last-child {
+        height: 100%;
+        width: 20%;
+    }
+
+    .item-content .size select{
+        font-size: 15px;
+    
+    }
+
+    .item-content .quantity input{
+        font-size: 15px;
+    
+    }
+    
+    .item-content .size select option{
+        font-size: 15px;
+    }
+    
+
+
+    .left-content {
+        width: 100%;
+    }
+
+    .item-content .size p , .item-content .quantity p{
+        width: inherit;
+    
+    }
+
+    .left-content{
+        width: 100%;
+        height: inherit;
+        float: left;
+    }
+
+    
+
+    .right-content{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .right-content-wrapper{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .bottom-content{
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 46.1875em){
+
+ 
+  
+    .right-content-wrapper p4{
+        font-size: 14px;
+    }
+
+    .item-content p4{
+        font-size: 12px;
+    }
+
+    .item-content .name{
+        margin-top: 0;
+    }
+
+    .item .item-content >div:last-child >div >div {
+        width: 100%;
+        text-align: center;
+        margin-top: -5px;
+    }
+
+    .item .item-content >div:last-child {
+        height: 100%;
+        width: 20%;
+    }
+
+    .item-content .size select{
+        font-size: 11px;
+        
+    
+    }
+
+    .item-content .quantity input{
+        font-size: 11px;
+    
+    }
+    
+    .item-content .size select option{
+        font-size: 11px;
+
+    }
+    
+
+
+    .left-content {
+        width: 100%;
+    }
+
+    .item-content .size p , .item-content .quantity p{
+        width: inherit;
+    
+    }
+
+    .left-content{
+        width: 100%;
+        height: inherit;
+        float: left;
+
+    }
+
+    .item .item-content >div:first-child {
+        height: 80%;
+        width: 80%;
+        float: left;
+    
+    
+    }
+
+    .right-content{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .right-content-wrapper{
+        width: 100%;
+    }
+
+    .bottom-content{
+        height: 50px;
+    }
+    
+}

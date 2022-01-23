@@ -1,0 +1,275 @@
+body{
+    background:#FAFAFA;
+
+}
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    margin:auto;
+    box-sizing: border-box;
+    min-height: 100vh;
+    max-width: 1140px;
+    position: relative;
+    padding-left:20px;
+    padding-right:20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background:#FAFAFA;
+
+}
+.right-side{
+    height: auto;
+    width: 75%;
+    float: left;
+    margin-bottom: 20px;
+}
+#btnOpenAccountNav{
+    display: none;
+}
+
+
+.right-side-content{
+    background: white;
+    width: 100%;
+    margin: auto;
+    margin-top: 150px;
+    display: inline-block;
+    padding: 20px;
+
+}
+
+
+
+.input-content{
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.input-content .fil{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.input-content .fil .lable-left{
+    width: 25%;
+    float: left;
+}
+
+input::placeholder{
+    color: black;
+}
+
+.input-content .fil .input-container{
+    width: 75%;
+    float: left;
+
+}
+.input-content .fil .input-container .custom-select{
+    margin: 0;
+}
+
+.input-content .fil .input-container > input{
+    width: 100%;
+    padding: 7px 8px;
+    border: 1.5px solid #8D8D8D;
+    border-radius: 3px;
+}
+
+
+textarea{
+    border: 1.5px solid #8D8D8D;
+    padding: 7px;
+    font-size: 14px;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    resize: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 90px;
+}
+
+
+
+
+
+#typeAddress{
+    display: flex;
+
+}
+#typeAddress input{
+    display: none;
+}
+
+#typeAddress label{
+    margin-right: 30px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+
+}
+
+#typeAddress input + label:before{
+    content: "\25CE";
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: bottom;
+    font-size: 17px;
+    color: transparent;
+    color: black;
+    cursor: pointer;
+}
+#typeAddress input:checked + label:before{
+    color: #F54253;
+    font-size: 17px;
+
+    content: "\25C9";
+
+}
+
+#chkDefaulAddress{
+    padding-left: 25%;
+}
+
+
+
+#chkDefaulAddress input + label{
+    display: block;
+    margin: 3px 4px 4px 0px;
+    font-size: 14px;
+    margin-top: 5px;
+
+}
+
+#chkDefaulAddress input{
+    display: none;
+}
+
+#chkDefaulAddress input + label:before{
+    content: "\220E";
+    border: 1px solid rgba(188, 188, 188, 1);
+    border-radius: 1px;
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: bottom;
+    color: transparent;
+    font-size: 12px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    border-radius: 3px;
+}
+
+#chkDefaulAddress input:checked + label:before{
+    background-color:#F54253;
+    color: white;
+    font-size: 12px;
+    border: 1px solid #F54253
+}
+
+.button-save{
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.button-save button{
+    min-width: 100px;
+    background: black;
+    padding: 12px;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 0;
+    font-weight: bold;
+}
+.button-save button:hover{
+    background: #F54253;
+}
+
+@media only screen and (max-width: 1006px){
+    #btnOpenAccountNav{
+        background: black;
+        width: 25px;
+        position: fixed;
+        margin-left: -20px;
+        padding: 5px 20px;
+        display: block;
+        top: 150px;
+        z-index: 2;
+
+
+    }
+    #btnOpenAccountNav a{
+        color: white;
+    }
+    .activeNavAct{
+        left: 0;
+    }
+
+  
+    .left-container{
+        display: none;
+    }
+
+    .right-side{
+        width: 100%;
+    }
+    .wrapper{
+        min-width: 300px;
+    }
+    
+    
+}
+
+
+@media only screen and (max-width: 793px){
+   
+    .input-content{
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 578px){
+  
+    .right-side{
+        width: 100%;
+    }
+
+    .right-side-content{
+        width: 100%;
+        padding: 10px;
+    }
+
+
+    .input-content .fil .lable-left{
+        min-width: 90px;
+        float: left;
+    }
+    #chkDefaulAddress{
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    #typeAddress label{
+        margin: 8px 0px;
+    }
+    
+    
+    #typeAddress{
+        display: block;
+        width: 100%;
+
+    
+    }
+    #filLoaiDiaChi{
+        display: block;
+    }
+    #lbLoaiDiaChi{
+        width: 100%;
+    }
+}

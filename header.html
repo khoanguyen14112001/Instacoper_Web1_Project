@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/radio.css">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto+Slab:wght@100&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+    
+    <title>Document</title>
+</head>
+<header id="header-test">
+   
+    <div class="header-top">
+          <div class="header-wrapper">
+              <div class="header-logo" id="hd_logo">
+                  <div class="header-logo-img">
+                    <img src="assets/img/logo.png">
+                  </div>
+                  
+                  <div class="header-brand-name">
+                    <img src="assets/img/brandNameWhite.svg">
+                  </div>
+              </div>
+              <script> 
+                document.getElementById("hd_logo").addEventListener('click',()=>{
+                    window.location.replace("index.html");
+                })
+              </script>
+      
+              <div class="header-search">
+                  <img src="assets/img/iconKhoa/ic_search.svg">
+                  <input type="search" placeholder="Tìm kiếm" id="searchBar">
+                  <div class="search-result" id="searchResult">
+                    
+                  </div>
+              </div>
+      
+              <div class="header-right-content">
+                  <div class="hd-action">
+                      <img id = "btnUserResLog" src="assets/img/iconKhoa/ic_user.svg">
+                      <div class="hd-user-menu">
+                          <div class="hd-user-container">
+                              <p id="txtLogin" >Đăng nhập</p>
+                              <p id="txtRegister">Đăng ký</p>
+                              <p id="txtMyAccount">Tài khoản của tôi</p>
+                              <p id="txtMyOrder">Quản lý đơn hàng</p>
+                              <p id="txtMyNotify">Thông báo của tôi <span class="pink-noti">2</span> </p>
+                              <p id="txtMyAddress">Thiết lập địa chỉ</p>
+                              <p id="txtChangePassword">Đổi mật khẩu</p>
+                              <p id="txtLogout">Đăng xuất</p>
+                             
+                          </div>
+                          <script>
+                              document.getElementById('txtLogin').addEventListener('click',()=>{
+                                window.location.replace('login.html');
+                              })
+                              document.getElementById('txtRegister').addEventListener('click',()=>{
+                                window.location.replace('register-form.html');
+                              })
+
+                              document.getElementById('txtMyAccount').addEventListener('click',()=>{
+                                window.location.replace('account_my_account.html');
+                              })
+
+                              document.getElementById('txtMyOrder').addEventListener('click',()=>{
+                                window.location.replace('account_order_management.html');
+                              })
+
+                              document.getElementById('txtMyNotify').addEventListener('click',()=>{
+                                window.location.replace('account_notification.html');
+                              })
+
+                              document.getElementById('txtMyAddress').addEventListener('click',()=>{
+                                window.location.replace('account_my_address.html');
+                              })
+
+                              document.getElementById('txtChangePassword').addEventListener('click',()=>{
+                                window.location.replace('account_change_password.html');
+                              })
+                          
+                          </script>
+                      </div>
+                      <img id="btnOpenCart" src="assets/img/iconKhoa/ic_cart_3.svg">
+                      <div class="hd-num-item"><span id="txtNumItem">2</span></div>
+                 
+                      <div class="hd-cart-menu">
+                          <div class="hd-item-container" id="hd_item_product_container">
+                          
+                          </div>
+                          <div class="hd-cart-button-container">
+                            <button class="hd-cart-left-button" id="btnOpenGioHang">
+                                Giỏ Hàng (<span id="txtNumItem2">0</span>) 
+                            </button>
+                            <button class="hd-cart-right-button" id="btnPay">
+                                Thanh toán
+                            </button>
+                            <script>
+                                document.getElementById('btnOpenGioHang').addEventListener('click',()=>{
+                                    window.location.replace("cart.html");
+                                })
+
+                                document.getElementById('btnPay').addEventListener('click',()=>{
+                                    window.location.replace("order.html");
+                                })
+                            </script>
+                        </div>
+
+                      </div>
+                  </div>
+          </div>
+       </div>
+      </div>  
+
+      <div class="header-bottom">
+          <div class="header-wrapper">
+              <div class="hd-danhmucsp">
+                  <div id="btnShowLeftMenu">
+                      <img src="assets/img/iconKhoa/ic_3gach.svg">
+                      <p>Danh mục sản phẩm</p>
+                  </div>
+              </div>
+
+              <div class="hd-nav"  id="navMenu">
+                <div  id="btnCloseNav"></div> 
+
+                  <ul>
+                      <li><a href="index.html" id="link-index">Trang chủ</a></li>
+                      
+                      <li id="sanpham" class="dropdown">
+                          <a class="link" id="link-sp" >Sản phẩm</a>
+                          <img src="assets/img/down_arrow.svg" id="ic_drop_product">
+                          <ul class="sub-nav" id="sub-sanpham">
+                           
+                              <li><i class="fas fa-caret-right"></i><a id="link-thuonghieu">Thương hiệu</a> 
+                              </li>
+                              <ul class="sub-nav-2" id="sub-thuonghieu">
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">Nike</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">Adidas</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">Converse</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">VANS</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">New Blance</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">MLB</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">Puma</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">Asics</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">Skechers</a></li>
+                              </ul>
+                              <li><i class="fas fa-caret-right"></i><a href="product.html">Khuyến mãi</a></li>
+                              <li><i class="fas fa-caret-right"></i><a href="product.html">Hàng mới về</a></li>
+                              <li><i class="fas fa-caret-right"></i><a href="product.html">Bán chạy nhất</a></li>
+                              <li><i class="fas fa-caret-right"></i><a href="product.html">Sneaker nam</a></li>
+                              <li><i class="fas fa-caret-right"></i><a href="product.html">Sneaker nữ</a></li>
+                              <li><i class="fas fa-caret-right"></i><a id="link-phukien" >Phụ kiện</a></li>
+                              <ul class="sub-nav-2" id="sub-phukien">
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">Tất/Vớ</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">Dây giày</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="product.html">Stickers</a></li>
+                              </ul>
+
+                          </ul>                            
+                      </li>
+
+                      <li class="dropdown"><a id="link-blog">Blog</a><img id = "ic_drop_blog" src="assets/img/down_arrow.svg">
+                      
+                          <ul class="sub-nav" id="sub-blog">
+                           
+                              <li><i class="fas fa-caret-right"></i><a id="link-chude">Chủ đề</a>
+                              </li>
+                              <ul class="sub-nav-2" id="sub-chude">
+                                  <li><i class="fas fa-caret-down"></i><a href="blog.html">Instacoper News</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="blog.html">Xu hướng thời trang</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="blog.html">Sao & Styles</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="blog.html">Tin tức thời trang</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="blog.html">Sneaker Tips</a></li>
+                                
+                              </ul>
+                              <li><i class="fas fa-caret-right"></i><a href="blog.html">Blog mới nhất</a></li>
+                              <li><i class="fas fa-caret-right"></i><a href="blog.html">Xem nhiều nhất</a></li>
+                          </ul> 
+
+                      </li>
+                      <li id="FAQS" class="dropdown"  ><a class="link" id="link-faq" >FAQs</a><img src="assets/img/down_arrow.svg" id="ic_drop_faq">
+                          <ul class="sub-nav" id="sub-FAQS">
+
+                              <li><i class="fas fa-caret-right"></i><a id="link-hotrokhachhang">Hỗ trợ khách hàng</a>
+                              </li>
+                              <ul class="sub-nav-2" id="sub-hotrokhachhang">
+                                  <li><i class="fas fa-caret-down"></i><a href="FAQ_HDMH.html">Hướng dẫn mua hàng</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="FAQ_HDTT.html">Hướng dẫn thanh toán</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="FAQ_GHVC.html">Giao hàng & vận chuyển</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="FAQ_HDChonSize.html">Hướng dẫn chọn size</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="FAQ_TheoDoiDonHang.html">Theo dõi đơn hàng</a></li>
+                                
+                              </ul>
+                              <li><i class="fas fa-caret-right"></i><a id="link-chinhsach">Chính sách</a></li>
+                              <ul class="sub-nav-2" id="sub-chinhsach">
+                                  <li><i class="fas fa-caret-down"></i><a href="FAQ_CSBaoMat.html">Chính sách bảo mật</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="FAQ_DoiTra.html">Chính sách đổi trả</a></li>
+                                  <li><i class="fas fa-caret-down"></i><a href="FAQ_CamKetBaoHanh.html">Cam kết & Bảo hành</a></li>
+                              </ul>
+                              <li><i class="fas fa-caret-right"></i><a href="FAQ_ContactInfo.html">Liên hệ</a></li>
+                             
+
+                          </ul>         
+                      </li>
+                      <li><a href="member.html" id="link-aboutUs">Về chúng tôi</a></li>
+                  </ul>
+              </div>
+
+              <div class="hd-nav-res">
+                  <img id ="btnShowNav" src="assets/img/iconKhoa/ic_3gach_black.svg">
+
+              </div>
+             
+          </div>
+      </div>
+      
+      <div class="left-menu" id="leftMenu">
+          <div class="close-left-menu">
+              <a id="btnCloseLeftMenu"></a>
+          </div>
+          <div class="left-menu-content">
+              <ul>
+                  <li><a href="product.html">Walking Style Shoes</a></li>
+                  <li><a href="product.html">Casual Shoes</a></li>
+                  <li><a href="product.html">Boat Shoes</a></li>
+                  <li><a href="product.html">Canvas Trendy Shoes</a></li>
+                  <li><a href="product.html">Basketball Style Shoes</a></li>
+                  <li><a href="product.html">Chunky Shoes</a></li>
+                  <li><a href="product.html">Other Trendy Shoes</a></li>
+              </ul>
+          </div>
+      </div>
+
+ 
+
+      <script src="js/navMobileShow.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+      <script src="js/SubNav.js"></script>
+
+      <script>
+        onLoadCartNumbers();
+        function onLoadCartNumbers(){
+            let productNumber = localStorage.getItem("cartNumbers");
+            var txtNumItem = document.getElementById('txtNumItem');
+            var txtNumItem2 = document.getElementById('txtNumItem2');
+
+            productNumber = parseInt(productNumber);
+            
+            if(productNumber){
+                txtNumItem.innerHTML = productNumber;
+                txtNumItem2.innerHTML = productNumber;
+            }
+            else{
+                txtNumItem.style.opacity='0';
+                txtNumItem.parentElement.style.opacity ='0';
+            }
+        }
+         </script>
+
+      <script>
+          var blog = document.getElementById("link-blog"); 
+          var product = document.getElementById("link-sp");
+          var index = document.getElementById("link-index");
+          var FAQs = document.getElementById("link-faq");
+          var aboutUs = document.getElementById("link-aboutUs");
+
+          var  ic_drop_blog = document.getElementById("ic_drop_blog");
+          var  ic_drop_product = document.getElementById("ic_drop_product");
+          var  ic_drop_faq = document.getElementById("ic_drop_faq");
+
+          var fullURL = window.location.href;
+          var arr = fullURL.split("/");
+          var link = arr[arr.length-1];
+
+          var arrFAQ = "FAQ_CamKetBaoHanh.html, FAQ_ContactInfo.html, FAQ_CSBaoMat.html, FAQ_DoiTra.html, "+
+          "FAQ_GHVC.html, FAQ_HDChonSize.html, FAQ_HDMH.html, FAQ_HDTT.html, "+
+          "FAQ_TheoDoiDonHang.html";
+
+          var arrProduct = "product.html, detail-product.html";
+          var arrBlog = "blog.html, blog-detail.html";
+
+          var arrIndex = "index.html";
+
+          
+
+          if(link==='index.html'||fullURL==="https://instacoper-05.web.app/"){
+            index.className = "on-use";
+            console.log(link); 
+          }
+
+          if(link === 'member.html'){
+            aboutUs.className = "on-use";
+            console.log(link); 
+          }
+
+
+          if(arrFAQ.includes(link)&&link!==""){
+            FAQs.className = "on-use";
+            ic_drop_faq.src = 'assets/img/iconKhoa/ic_down_arrow_pink.svg'
+            console.log(link); 
+          }
+
+          
+          if(arrProduct.includes(link)&&link!==""){
+            product.className = "on-use";
+            ic_drop_product.src = 'assets/img/iconKhoa/ic_down_arrow_pink.svg'
+            console.log(link); 
+          }
+
+          if(arrBlog.includes(link)&&link!==""){
+            blog.className = "on-use";
+            ic_drop_blog.src = 'assets/img/iconKhoa/ic_down_arrow_pink.svg'
+            console.log(link); 
+          }
+
+   </script>
+
+   <script>
+    var xhttp = new XMLHttpRequest();
+    var html = "";
+    var i;
+    let myArr;
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+                myArr = JSON.parse(this.responseText);
+               
+            }
+        };
+    xhttp.open("GET","assets/json/db_product.json", true);
+    xhttp.send();
+    function selectElement(selector){
+        return document.querySelector(selector);
+    }
+
+    function clearFilter(){
+        selectElement('.search-result').innerHTML = " ";
+    }
+    var searchBar = document.getElementById('searchBar');
+    var searchResult = document.getElementById('searchResult');
+    window.onclick = function(event){
+        if(event.target !== searchBar && event.target !== searchResult){
+            clearFilter();
+        }
+    }
+
+    function getResult(){
+        const search = selectElement('#searchBar').value;
+        clearFilter();
+        if(search.length>0){
+            for (i = 0; i <myArr.product.length; i++) {
+            var sp = myArr.product[i];
+            if (sp.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())){
+                selectElement('.search-result').innerHTML +=
+                " <div class='search-result-item' onclick = openDetail(" + i + ") > <div class='search-item-img'> <img src='"+sp.thumb+"'> </div> <div class='search-item-content'> <div class='search-item-name'>"+sp.name+" </div> <div class='search-item-price'>"+sp.aft_price+"</div> <div class='search-item-gender'>"+sp.gender+"</div> </div></div>"
+                     
+                    console.log(sp.name);
+            }
+        
+      
+       
+        }
+        }
+     
+    }
+
+    function openDetail(i){
+        var sp = myArr.product[i];
+        localStorage.setItem("data",JSON.stringify(sp));
+        location.href = "detail-product.html";
+        console.log(i);
+    }
+ 
+ 
+    selectElement('#searchBar').addEventListener('keyup', getResult);
+    
+    
+
+</script>
+
+<script>
+    displayCart();
+    function displayCart(){
+        let productInCart = JSON.parse(localStorage.getItem("productInCart"));
+
+        
+        Object.values(productInCart).map(item =>{
+            item.aft_price = formatCurrency(item.aft_price);
+
+            document.getElementById('hd_item_product_container').innerHTML += `
+            <div class="hd-item">
+               <div class="hd-item-img">
+                                      <img src="${item.thumb}">
+                                  </div>
+                                  <div class="hd-item-main-content">
+                                      <p class="hd-item-title">${item.name}</p>
+                                      <p class="hd-item-gender">${item.gender}</p>
+                                      <p class="hd-item-size">Size: 40.5</p>
+                                      <p class="hd-item-price">${item.aft_price}</p>
+                                  </div>
+                                  <div class="hd-item-delete">
+                                      <img src="assets/img/iconKhoa/ic_delete_cart.svg">
+                                  </div>
+                              </div>
+
+                              <div class="hd-bottom-seperate"></div>
+                              </div>                   
+            `
+
+        })
+
+    }
+
+    function formatCurrency(number){
+        number = number.toLocaleString('it-IT', {style : 'currency', currency : 'VND'});
+        number = number.replace("VND", "₫");
+        number = number.replace(/\s+/g, '');
+        return number;
+    }
+</script>
+
+</header>
+
+
+
+
+
+  
+
+
+
+</html>

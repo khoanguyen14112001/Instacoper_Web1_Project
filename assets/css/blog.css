@@ -1,0 +1,406 @@
+.wrapper{
+    max-width: 1140px;
+    width: 100%;
+    height: auto;
+    margin:auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin-top: 160px;
+    min-width: 300px;
+
+}
+
+.part-one{
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.part-two{
+    float: left;
+    width: 100%;
+    margin-top: 80px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+
+
+/* -----Phần long blog----- */
+
+.long-image{
+    width: 35.5%;
+    float: left;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+
+.long-image img{
+    width: 100%;
+}
+
+.long-content{
+    width: 64.5%;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    height: inherit;
+
+}
+
+.long-content >div{
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.long-content img{
+    float: left;
+
+}
+
+.long-type{
+    height: 10%;
+    display: inline;
+    cursor: pointer;
+    transition: 0.5s;
+
+    
+}
+
+.long-type:hover{
+    color: #F54253;
+    transition: 0.3s;
+    
+}
+
+.long-type p{
+    margin-left: 10px;
+    float: left;
+    height:20px;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+}
+
+.long-title{
+    height: 35%;
+    cursor: pointer;
+
+}
+.long-title p, .long-title a{
+    padding-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Playfair Display',sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+.long-title a:hover{
+    color: #F54253;
+    transition: 0.3s;
+
+}
+
+.long-text{
+    height: 45%;
+    box-sizing: border-box;
+   
+
+}
+
+.long-text p{
+    padding-top: 10px;
+    font-size: 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+           line-clamp: 3; 
+   -webkit-box-orient: vertical;
+
+}
+
+.long-more {
+    height: 10%;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 35.5%;
+    margin-left: 20px;
+}
+
+.long-more p{
+    font-size: 16px;
+    display: flex;
+    align-items: flex-end;
+    font-style: italic;
+    text-decoration: 1px underline;
+    font-family: 'Source Serif Pro';
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.top-content-left{
+    width: 100%;
+    float: left;
+    line-height: 2;
+    overflow-x: hidden;
+    
+}
+.top-content-left .outside{
+    width: 1140px;
+    height: auto;
+    margin: auto;
+}
+  
+
+
+/* -----Phần short blog----- */
+.part-two{
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.short-one {
+    width: 32.3%;
+    float: left;
+    display: block;
+    position: relative;
+    height: auto;
+    padding-bottom: 50px;
+ 
+}
+
+.sh-one-image> img{
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+.short-one-content{
+    width: 100%;
+
+}
+
+.sh-one-type >img , .sh-one-type >p{
+    display: inline;
+    margin-top: 10px;
+
+}
+.sh-one-type >img {
+    height: 15px;
+}
+
+.sh-one-type >p{
+    font-size: 15px;
+    font-weight: 600; 
+    margin-left: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+
+
+ 
+}
+.sh-one-type >p:hover{
+    color: #F54253;
+    transition: 0.3s;
+
+ 
+}
+
+.sh-one-title >p, .sh-one-title >a{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Playfair Display',sans-serif;
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+
+
+}
+.sh-one-title >a:hover{
+    color: #F54253;
+    transition: 0.3s;
+
+}
+
+.sh-one-text >p{
+    font-size:12px;
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+
+.sh-one-more{
+    position: absolute;
+    left: 0;
+    margin-top: 20px;
+
+}
+
+.sh-one-more p{
+    font-size:14px;
+    font-style: italic;
+    text-decoration: 1px underline;
+    font-family: 'Source Serif Pro';
+    font-weight: bold;
+    cursor: pointer;
+
+
+}
+
+.page-number{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    float: left;
+    height: fit-content;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.page-number-content input, .page-number-content p, .page-number-content img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.page-number-content img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+label{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.page-number-content input {
+    display: none;
+}
+
+.page-number-content label{
+    position: relative;
+    border: 1px solid rgba(188, 188, 188, 1);
+    font-size: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: rgba(250, 251, 251, 1);
+    border-radius: 3px;
+    margin-right: 7px;
+    margin-left: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.page-number-content input:checked + label{
+    background-color: #F54253;
+    color: white;
+    border: 1px solid #F54253;
+    -webkit-box-shadow: 2px 2px 2px #666;
+    -moz-box-shadow: 2px 2px 2px #666;
+    box-shadow: 2px 2px 2px #666;
+}
+@media only screen and (min-width:666px) and (max-width: 928px){
+    .long-image{
+        width: 50%;
+    }
+    .long-content{
+        width: 50%;
+    }
+
+    .long-more{
+        left: 50.5%;
+    }
+}
+
+@media only screen and (min-width: 463px) and (max-width: 666px){
+    .long-image{
+        width: 100%;
+    }
+    .long-content >div{
+        display: inline-block;
+        padding-left: 0;
+    }
+    .long-content{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+
+    .long-more{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 463px){
+    .long-image{
+        width: 100%;
+    }
+    .long-content >div{
+        display: inline-block;
+        padding-left: 0;
+    }
+    .long-content{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+
+    .long-more{
+        display: none;
+    }
+
+    .short-one{
+        width: 48%;
+    }
+
+    .page-number-content label{
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    #a55{
+        display: none;
+    }
+
+    #a44{
+        display: none;
+    }
+    
+}
